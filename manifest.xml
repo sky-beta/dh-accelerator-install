@@ -11,7 +11,7 @@
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <string>https://github.com/sky-beta/dh-accelerator-install/releases/download/v1.1.5/dh-Accelerator-1.1.5-AdHoc.ipa</string>
+          <string>https://github.com/sky-beta/dh-accelerator-install/releases/download/v1.1.6/dh-Accelerator-1.1.6-AdHoc.ipa</string>
         </dict>
         <dict>
           <key>kind</key>
@@ -35,7 +35,7 @@
         <key>bundle-identifier</key>
         <string>com.dh.accelerator.ios</string>
         <key>bundle-version</key>
-        <string>1.1.5</string>
+        <string>1.1.6</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
