@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eaf6ff" />
+    <title>dh加速器 · iOS 在线安装</title>
+    <meta name="description" content="dh加速器 iPhone 与 iPad 一键安装页面。" />
+    <link rel="canonical" href="https://sky-beta.github.io/dh-accelerator-install/" />
+    <link rel="icon" href="./app-icon.png" />
+    <link rel="apple-touch-icon" href="./app-icon.png" />
+    <meta property="og:title" content="dh加速器 · iOS 一键安装" />
+    <meta property="og:description" content="已签名，支持 iPhone 与 iPad。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sky-beta.github.io/dh-accelerator-install/" />
+    <meta property="og:image" content="https://sky-beta.github.io/dh-accelerator-install/og.png" />
+    <style>
+      :root{--ink:#102447;--muted:#61708b;--blue:#377ff4;--deep:#2165df;--line:rgba(73,119,174,.15)}
+      *{box-sizing:border-box}
+      html{min-height:100%;background:#eaf6ff}
+      body{margin:0;min-height:100%;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+      main{position:relative;isolation:isolate;min-height:100svh;overflow:hidden;padding:48px 20px;display:grid;place-items:center;background:radial-gradient(circle at 12% 8%,rgba(255,255,255,.95),transparent 27%),linear-gradient(145deg,#dff2ff 0%,#f9fcff 52%,#eef5ff 100%)}
+      main:before,main:after{content:"";position:absolute;z-index:-1;border-radius:999px;filter:blur(4px);opacity:.7}
+      main:before{width:360px;height:360px;top:-170px;right:-80px;background:rgba(142,198,255,.45)}
+      main:after{width:260px;height:260px;bottom:-100px;left:-70px;background:rgba(255,193,222,.35)}
+      .card{width:min(100%,600px);padding:30px;border:1px solid rgba(255,255,255,.85);border-radius:36px;background:rgba(255,255,255,.78);box-shadow:0 30px 80px rgba(38,91,150,.18),inset 0 1px 0 #fff;backdrop-filter:blur(24px)}
+      .brand{display:flex;align-items:center;gap:17px;padding-bottom:25px;border-bottom:1px solid var(--line)}
+      .icon{width:86px;height:86px;flex:0 0 auto;padding:4px;overflow:hidden;border-radius:23px;background:#fff;box-shadow:0 12px 30px rgba(51,104,164,.16)}
+      .icon img{width:100%;height:100%;display:block;border-radius:20px;object-fit:cover}
+      .eyebrow{margin:0 0 3px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+      h1{margin:0;font-size:clamp(25px,5vw,33px);line-height:1.15;letter-spacing:-.03em}
+      .version{margin:7px 0 0;color:var(--muted);font-size:13px}
+      .hero{padding:31px 0 25px;text-align:center}
+      .status{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(53,161,120,.17);border-radius:999px;color:#20835f;background:rgba(217,248,237,.7);font-size:12px;font-weight:750}
+      .status i{width:7px;height:7px;border-radius:50%;background:#35b985;box-shadow:0 0 0 4px rgba(53,185,133,.12)}
+      h2{margin:17px 0 10px;font-size:clamp(31px,7vw,47px);line-height:1.12;letter-spacing:-.045em}
+      .hero p{max-width:410px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.7}
+      .install{width:100%;min-height:62px;padding:0 21px;display:flex;align-items:center;gap:12px;border-radius:19px;color:#fff;background:linear-gradient(135deg,#4c98ff 0%,var(--deep) 100%);box-shadow:0 14px 30px rgba(35,107,225,.32);text-decoration:none;font-size:17px;font-weight:800;-webkit-tap-highlight-color:transparent}
+      .install svg{width:23px;height:23px}.install b{margin-left:auto;font-size:25px;font-weight:400}.install:active{transform:scale(.985)}
+      .download{display:block;padding:13px 0 2px;color:#61708b;text-align:center;text-decoration:none;font-size:12px}
+      .steps{margin-top:23px;padding:22px;border:1px solid var(--line);border-radius:22px;background:rgba(247,251,255,.75)}
+      .steps h3{margin:0 0 16px;font-size:15px}.steps ol{margin:0;padding:0;display:grid;gap:15px;list-style:none}.steps li{display:flex;align-items:center;gap:12px}
+      .steps li>span{width:28px;height:28px;display:grid;flex:0 0 auto;place-items:center;border-radius:9px;color:var(--blue);background:#e4f0ff;font-size:12px;font-weight:850}
+      .steps b,.steps small{display:block}.steps b{font-size:13px}.steps small{margin-top:2px;color:var(--muted);font-size:11px}
+      aside{margin-top:16px;padding:16px 17px;border:1px solid rgba(233,168,79,.2);border-radius:18px;background:rgba(255,247,229,.75)}
+      aside strong{color:#8b5e1e;font-size:12px}aside p{margin:5px 0 0;color:#7c6749;font-size:11px;line-height:1.65}
+      footer{padding:19px 3px 0;display:flex;justify-content:space-between;gap:10px;color:#8793a6;font-size:10px}
+      @media(max-width:520px){main{align-items:start;padding:16px 12px}.card{padding:22px 18px;border-radius:27px}.icon{width:72px;height:72px;border-radius:20px}.icon img{border-radius:17px}.hero{padding:26px 0 21px}.steps{padding:19px 17px}}
+      @media(max-width:370px){.brand{gap:12px}.icon{width:62px;height:62px}.version{font-size:11px}.install{font-size:15px}footer{display:grid}}
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="brand">
+          <div class="icon"><img src="./app-icon.png" alt="dh加速器图标" /></div>
+          <div>
+            <p class="eyebrow">iOS / iPadOS</p>
+            <h1>dh加速器</h1>
+            <p class="version">版本 1.1.3（7）· Ad Hoc 已签名</p>
+          </div>
+        </div>
+        <div class="hero">
+          <span class="status"><i></i>安装包已就绪</span>
+          <h2>在 iPhone 或 iPad 上<br />一键安装</h2>
+          <p>使用 Safari 打开本页，点击按钮后按系统提示完成安装。</p>
+        </div>
+        <a class="install" href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fsky-beta.github.io%2Fdh-accelerator-install%2Fmanifest.plist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.7 12.9c0-2.4 2-3.6 2.1-3.7a4.6 4.6 0 0 0-3.6-2c-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9a4.9 4.9 0 0 0-4.1 2.5c-1.8 3-.5 7.5 1.2 10 .9 1.2 1.9 2.6 3.2 2.5 1.3 0 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.2 3.1-2.5a10.8 10.8 0 0 0 1.4-2.9 4.2 4.2 0 0 1-2.6-3.9Zm-2.5-7.3A4.2 4.2 0 0 0 15.2 2a4.5 4.5 0 0 0-3 1.8 4 4 0 0 0-1 3.4 3.7 3.7 0 0 0 3-1.6Z"/></svg>
+          <span>安装 dh加速器</span><b>→</b>
+        </a>
+        <a class="download" href="https://github.com/sky-beta/dh-accelerator-install/releases/download/v1.1.3/dh-Accelerator-1.1.3-AdHoc.ipa">备用：下载 IPA 文件</a>
+        <div class="steps">
+          <h3>安装步骤</h3>
+          <ol>
+            <li><span>1</span><div><b>使用 Safari</b><small>iPhone 或 iPad 打开当前页面</small></div></li>
+            <li><span>2</span><div><b>点击安装</b><small>在系统弹窗中选择“安装”</small></div></li>
+            <li><span>3</span><div><b>等待完成</b><small>回到桌面查看安装进度</small></div></li>
+          </ol>
+        </div>
+        <aside>
+          <strong>重要提示</strong>
+          <p>请勿再用轻松签、AltStore 等工具重新签名，否则 VPN 网络扩展权限会失效。</p>
+        </aside>
+        <footer><span>支持 iOS / iPadOS 15 及以上</span><span>SHA-256 已校验</span></footer>
+      </section>
+    </main>
+  </body>
+</html>
